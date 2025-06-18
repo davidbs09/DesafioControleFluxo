@@ -21,9 +21,9 @@ public class Contador {
 
     static void contar(int parametroUm, int parametroDois) throws ParametrosInvalidosException {
         if (parametroUm > parametroDois) {
-            throw new ParametrosInvalidosException("O segundo parâmetro deve ser maior que o primeiro");
+            throw new ParametrosInvalidosException("O segundo parâmetro deve ser maior que o primeiro.");
         } else if (parametroUm == parametroDois) {
-            throw new ParametrosInvalidosException("Os parâmetros não podem ser iguais");
+            throw new ParametrosInvalidosException("Com os parâmetros iguais não é possível contar a diferença.");
         }
         int contagem = parametroDois - parametroUm;
         for (int i = 1; i <= contagem; i++) {
